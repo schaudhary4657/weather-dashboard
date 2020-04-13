@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ca89a4b9f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
@@ -20,8 +20,8 @@
                 <h4>Search for a city:</h4>
                 <div class = "input-group mb-3">
                     <input id = "searchTerm" type = "text" class = "form-control" placeholder = "Name of the city" class = "input-group-append">
-                    <button id = "searchBtn" class = "btn btn-primary" type = "button" id = "button-addon2"><i class = "far fa-search"></i></button>
-                </div>   
+                    <button id = "searchBtn" class = "btn btn-primary" type = "button" id = "button-addon2"><i class = "fa fa-fw fa-search"></i></button>
+                </div>
 
                 <div class = "card">
                     <ul class = "list-group list-group-flush list"></ul>
@@ -30,31 +30,19 @@
             </div>
 
             <div class = "col-lg-9">
-                <div id = "currentCity" class = "mt-4">
-                    
+                <div id = "currentCity" class = "mt-4"></div>
+
+                <div class = "col-lg-12 hide">
+                    <h4 id = "forecastH5" class = "mt-3">5-Day Forecast:</h4>
+                    <div id = "forecast" class = "row"></div>
                 </div>
             </div>
 
-            <div class = "col-lg-3 bg-light pt-3 pb-3"></div>
-
-            <div class = "col-lg-9 hide">
-                <h4 id = "forecastH5" class = "mt-3">5-Day Forecast:</h4>
-                <div id = "forecast" class = "row"></div>
-            </div>
-
         </div>
-
-        <!-- <div class="mt-4 col-md-12 hide"> 
-
-            <h4 id="forecastH5" class="mt-3">5-Day Forecast:</h4>
-
-            <div id="forecast" class="row"> 
-
-            </div>
-        </div>  -->
         
     </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
 </body>
 </html>

@@ -1,7 +1,15 @@
-/* .hide {
+.hide {
     display: none;
 }
 
 .show {
     display: block;
-} */
+}
+
+div .card {
+    flex-direction: row;
+}
+
+li.list-group-item {
+    cursor: pointer;
+}
